@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://colab.research.google.com/
+HostUrl=https://storage.googleapis.com/tensorflow_docs/docs-l10n/site/ko/tutorials/text/image_captioning.ipynb
