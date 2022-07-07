@@ -1,0 +1,30 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../datasets/coco128  # dataset root dir
+train: images/train2017  # train images (relative to 'path') 128 images
+val: images/train2017  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+nc: 80  # number of classes
+names: ['사람', '자전거', '자동차', '오토바이', '비행기', '버스', '기차', '트럭', '보트', '신호등',
+        '소화전', '정지 신호', '주차 미터기', '벤치', '새', '고양이', '개', '말', '양', '소',
+        '코끼리', '곰', '얼룩말', '기린', '배낭', '우산', '핸드백', '타이', '여행가방', '프리스비',
+        '스키', '스노우보드', '스포츠공', '연', '야구방망이', '야구장갑', '스케이트보드', '서프보드',
+        '테니스 라켓', '병', '와인잔', '컵', '포크', '나이프', '숟가락', '그릇', '바나나', '사과',
+        '샌드위치', '오렌지', '브로콜리', '당근', '핫도그', '피자', '도넛', '케이크', '의자', '소파',
+        '화분', '침대', '식탁', '화장실', 'tv', '노트북', '마우스', '리모컨', '키보드', '휴대폰',
+        '전자레인지', '오븐', '토스터', '싱크대', '냉장고', '책', '시계', '꽃병', '가위', '테디베어',
+        '드라이기', '칫솔'] # class name
+
+
+# Download script/URL (optional)
+download: https://ultralytics.com/assets/coco128.zip
